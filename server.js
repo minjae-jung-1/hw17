@@ -7,6 +7,7 @@ const PORT = 5500;
 
 const app = express();
 
+
 app.use(logger("dev"));
 
 app.use(cors({
@@ -30,4 +31,5 @@ app.use(require("./routes/view.js"));
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
+  console.log("App running at http://localhost:5500/")
 });
